@@ -2,16 +2,16 @@ import string
 def palindrome_string(s):
     cleaned = (s.translate(str.maketrans('', '', string.punctuation)).replace(" ", "")).lower()
     if(cleaned == cleaned[::-1]):
-        print("Palindrome!")
+        print("Sentence is Palindrome!")
     else:
-        print("Not Palindrome!")
+        print("Sentence is Not Palindrome!")
 
 def palindrome_number(number):
     number_str = str(number)
     if(number_str == number_str[::-1]):
-        print("Palindrome!")
+        print("Number is Palindrome!")
     else:
-        print("Not Palindrome!")
+        print("Number is Not Palindrome!")
 
 user_input = input("Enter number or sentence to check for palindrome: ")
 if(user_input.isalpha()):

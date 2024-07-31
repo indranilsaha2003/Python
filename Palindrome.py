@@ -14,7 +14,7 @@ def palindrome_number(number):
         print("Number is Not Palindrome!")
 
 user_input = input("Enter number or sentence to check for palindrome: ")
-if(user_input.isalpha()):
-    palindrome_string(user_input)
-else:
+if(user_input.isnumeric()):
     palindrome_number(user_input)
+else:
+    palindrome_string(user_input)

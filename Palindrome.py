@@ -13,8 +13,8 @@ def palindrome_number(number):
     else:
         print("Not Palindrome!")
 
-user_string = input("Enter a sentence to check for palindrome: ")
-palindrome_string(user_string)
-
-user_number = input("Enter a number to check for palindrome: ")
-palindrome_number(user_number)
+user_input = input("Enter number or sentence to check for palindrome: ")
+if(user_input.isalpha()):
+    palindrome_string(user_input)
+else:
+    palindrome_number(user_input)
